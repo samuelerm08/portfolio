@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css);
+
+body,
+html {
+    margin: 0px;
+    background-color: #202021;
+    font-size: 18px;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #ccd6f6;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    font-size: 15px;
+    position: fixed;
+    background-color: #2020215d;
+    backdrop-filter: blur(10px);
+    box-shadow: black;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100px;
+}
+
+#styleForList {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+#styleForList ol {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: #ccd6f6;
+    margin: 0;
+    padding: 0;
+}
+
+#styleForList ol li a {
+    padding: 10px;
+}
+
+#styleForList ol li a::before {
+    content: "-";
+    color: #E1CE1D;
+    text-align: right;
+}
+
+#styleForList #resumeButton {
+    color: #E1CE1D;
+    border: 1px solid #E1CE1D;
+    border-radius: 4px;
+    padding: 15px;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ol li {
+    margin: 0px 5px;    
+    padding: 20px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;    
+    transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+a:hover {
+    color: #E1CE1D;
+}
+
+#styleForList #resumeButton:hover {
+    background-color: #3d3808;
+}
+
+main {
+    display: grid;
+    width: 100%;
+    height: 90%;
+    float: left;
+    justify-items: center;
+    justify-content: center;
+}
+
+#intro-section {
+    padding: 100px;
+}
+
+main h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: -3px 2px 4px black;
+}
+
+main h4 {
+    color: #E1CE1D;
+}
+
+main h3 {
+    color: gray;
+}
+
+main p {
+    font-weight: bold;
+    color: gray;
+}
+
+#name-title {
+    margin: 10% 0 0 0;
+}
+
+#projects-section {
+    color: white;
+    padding: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+table {
+    position: static;
+}
+
+.table {
+    border: 3px solid #E1CE1D;
+    color: white;
+    text-align: center;
+}
+
+.table th {
+    width: 25%;
+}
+
+#contact-section {
+    color: white;
+    padding: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+#contact-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+i {
+    font-size: 50px;
+}
+
+
+
+@media (max-width: 768px)
+{
+    header{
+        justify-content: center;
+    }
+
+    #intro-section{
+        padding: 100px 70px;
+    }  
+    
+    #projects-section{
+        padding: 100px 70px;
+    } 
+
+    #contact-section{
+        padding: 100px 70px;
+    }
+}
+@media (max-width: 425px) {        
+    
+    nav {
+        display: none;
+    }
+
+    main {
+        font-size: 12px;    
+    }     
+
+    main h1{
+        font-size: 35px;
+        text-align: left;
+    }
+
+    main h3, h4{
+        font-size: 15px;
+    }
+
+    #intro-section{
+        padding: 100px 50px;
+    }  
+    
+    #projects-section{
+        padding: 100px 50px;
+    } 
+
+    #contact-section{
+        padding: 100px 50px;
+    } 
+
+    i {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+               
+    nav {
+        display: none;
+    }
+
+    main {
+        font-size: 10px;    
+    }     
+
+    main h1{
+        font-size: 35px;
+        text-align: left;
+    }
+
+    main h3, h4{
+        font-size: 15px;
+    }
+
+    #intro-section{
+        padding: 80px 20px;
+    }  
+    
+    #projects-section{
+        padding: 80px 20px;
+    } 
+
+    #contact-section{
+        padding: 80px 20px;
+    } 
+
+    i {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Rivera</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/d2ee588a67.css" crossorigin="anonymous">
+</head>
+
+<body onload="MostrarProyectos()">
+    <header>
+        <section id="logo">
+            <a href="index.html">
+                <img width="100px" height="100px" src="logo.png" alt="logo">
+            </a>
+        </section>
+
+        <nav>
+            <section id="styleForList">
+                <ol>
+                    <li>
+                        <a href="#inicio">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects">
+                            Proyectos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            Contacto
+                        </a>
+                    </li>
+
+                    <section>
+                        <a id="resumeButton" href="/NETDEVELOPER.pdf">CV</a>
+                    </section>                    
+                </ol>
+            </section>
+        </nav>                
+    </header>
+
+    <main>
+
+        <a name="inicio"></a>
+        <section id="intro-section">
+            <article id="name-title">
+                <h4>Hola, mi nombre es</h4>
+                <h1>Samuel Rivera</h1>
+                <h3>Software Developer</h1>
+            </article>
+
+            <article id="about-intro">
+                <p>
+                    Soy estudiante de Análisis de Sistemas <br>
+                    con pasión por el Desarrollo de Software.
+                </p>
+            </article>
+        </section>
+
+        <a name="projects"></a>
+
+        <section id="projects-section">
+            <h2>Proyectos</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Titulo</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">GitHub</th>
+                    </tr>
+                </thead>
+                <tbody id=t-b>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact-section">
+            <a name="contact"></a>
+            <h2 id="contact-title">Contactame</h2>
+
+            <div id="contact-icons">
+
+                <a href="https://github.com/samuelerm08">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/samuel-rivera-mata/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://wa.me/+5491127760957">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="mailto:samuelrm08@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/d2ee588a67.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
