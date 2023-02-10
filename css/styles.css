@@ -24,11 +24,58 @@ header {
     box-shadow: black;
 }
 
-nav {
+header #burger-button {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0px 15px;
+}
+
+#main-nav {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     width: 100%;
     height: 100px;
+}
+
+#side-bar {
+    display: none;
+}
+
+#side-nav {   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;    
+}
+
+#side-nav ol {    
+    list-style: none;
+    color: #ccd6f6;
+    margin: 0;
+    padding: 0;
+}
+
+#side-nav ol li a::before {
+    content: "-";
+    color: #E1CE1D;
+    text-align: right;
+}
+
+#side-bar #resumeButton {
+    color: #E1CE1D;
+    border: 1px solid #E1CE1D;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 15px;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+aside {
+    display: none;
 }
 
 #styleForList {
@@ -67,14 +114,13 @@ nav {
 }
 
 ol li {
-    margin: 0px 5px;    
+    margin: 0px 5px;
     padding: 20px;
 }
 
 a {
-    display: inline-block;
     text-decoration: none;
-    color: inherit;    
+    color: inherit;
     transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -161,56 +207,89 @@ i {
     font-size: 50px;
 }
 
+@media (max-width: 768px) {
 
-
-@media (max-width: 768px)
-{
-    header{
-        justify-content: center;
+    header {
+        justify-content: space-between;
     }
 
-    #intro-section{
-        padding: 100px 70px;
-    }  
-    
-    #projects-section{
-        padding: 100px 70px;
-    } 
-
-    #contact-section{
-        padding: 100px 70px;
+    header #burger-button {
+        display: block;
+        position: relative;
+        z-index: 2;
     }
-}
-@media (max-width: 425px) {        
-    
-    nav {
+
+    #styleForList {
         display: none;
     }
 
-    main {
-        font-size: 12px;    
-    }     
+    #side-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+        text-align: center;
+        align-items: center;
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        padding: 50px 10px;
+        width: min(75vw, 400px);
+        height: 100vh;
+        background-color: #202021;
+        box-shadow: -10px 0px 30px -15px black;        
+        z-index: 1;
+        visibility: visible;
+        transform: translateX(0vw);
+        transition: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }    
 
-    main h1{
+    main{
+        position: relative;
+        filter: blur(5px);
+        z-index: -2;
+    }
+
+    #intro-section {
+        padding: 100px 70px;                
+    }
+
+    #projects-section {
+        padding: 100px 70px;
+    }
+
+    #contact-section {
+        padding: 100px 70px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    main {
+        font-size: 12px;
+    }
+
+    main h1 {
         font-size: 35px;
         text-align: left;
     }
 
-    main h3, h4{
+    main h3,
+    h4 {
         font-size: 15px;
     }
 
-    #intro-section{
+    #intro-section {
         padding: 100px 50px;
-    }  
-    
-    #projects-section{
-        padding: 100px 50px;
-    } 
+    }
 
-    #contact-section{
+    #projects-section {
         padding: 100px 50px;
-    } 
+    }
+
+    #contact-section {
+        padding: 100px 50px;
+    }
 
     i {
         font-size: 30px;
@@ -218,35 +297,36 @@ i {
 }
 
 @media (max-width: 320px) {
-               
-    nav {
+
+    #main-nav {
         display: none;
     }
 
     main {
-        font-size: 10px;    
-    }     
+        font-size: 10px;
+    }
 
-    main h1{
+    main h1 {
         font-size: 35px;
         text-align: left;
     }
 
-    main h3, h4{
+    main h3,
+    h4 {
         font-size: 15px;
     }
 
-    #intro-section{
+    #intro-section {
         padding: 80px 20px;
-    }  
-    
-    #projects-section{
-        padding: 80px 20px;
-    } 
+    }
 
-    #contact-section{
+    #projects-section {
         padding: 80px 20px;
-    } 
+    }
+
+    #contact-section {
+        padding: 80px 20px;
+    }
 
     i {
         font-size: 30px;

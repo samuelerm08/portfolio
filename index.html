@@ -12,12 +12,10 @@
 
 <body onload="MostrarProyectos()">
     <header>
-        <section id="logo">
-            <a href="index.html">
-                <img width="100px" height="100px" src="logo.png" alt="logo">
-            </a>
-        </section>
-        <nav>
+        <a href="index.html">
+            <img width="100px" height="100px" src="logo.png" alt="logo">
+        </a>
+        <nav id="main-nav">
             <section id="styleForList">
                 <ol>
                     <li>
@@ -35,15 +33,37 @@
                             Contacto
                         </a>
                     </li>
-
-                    <section>
-                        <a id="resumeButton" href="/NETDEVELOPER.pdf">CV</a>
-                    </section>                    
                 </ol>
+                <a id="resumeButton" href="/NETDEVELOPER.pdf">CV</a>
             </section>
-        </nav>      
-        
-        <i class="fa fa-bars" aria-hidden="true"></i>          
+
+            <i id="burger-button" class="fa fa-bars" aria-hidden="true" onclick="DesplegarAside()"></i>
+
+            <aside id="side-bar">
+                <nav id="side-nav">
+                    <section id="side-bar-nav">
+                        <ol>
+                            <li>
+                                <a href="#inicio">
+                                    Inicio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#projects">
+                                    Proyectos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact">
+                                    Contacto
+                                </a>
+                            </li>                            
+                        </ol>                        
+                    </section>
+                </nav>
+                <a id="resumeButton" href="/NETDEVELOPER.pdf">CV</a>
+            </aside>
+        </nav>
     </header>
 
     <main>

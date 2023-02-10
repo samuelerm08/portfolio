@@ -29,15 +29,19 @@ const porfolio = [
 function MostrarProyectos() {
 
     let tb = document.getElementById('t-b');
-    let table = document.querySelector('table');
 
     porfolio.map((item) => {
 
-        let rows =`<tr>                    
+        let rows = `<tr>                    
                     <td>${item.title}</td>                       
                     <td>${item.description}</td>
                     <td><a href="${item.github}">Ver Repositorio</a></td>
                    <tr>`
-        tb.innerHTML += rows;        
-    });        
+        tb.innerHTML += rows;
+    });
+}
+
+function DesplegarAside() {
+
+    
 }
