@@ -73,6 +73,10 @@ header #burger-button {
     cursor: pointer;
 }
 
+#side-nav #resumeButton:hover {
+    background-color: #3d3808;
+}
+
 aside {
     display: none;
 }
@@ -268,7 +272,7 @@ i {
 
     main h1 {
         font-size: 35px;
-        text-align: left;
+        text-align: center;
     }
 
     main h3,
@@ -290,22 +294,37 @@ i {
 
     i {
         font-size: 30px;
+    }
+}
+
+@media (max-width: 375px) {
+    
+    #styleForList {
+        display: none;
+    }    
+
+    #intro-section {
+        padding: 100px 40px;
+    }
+
+    #projects-section {
+        padding: 100px 40px;
+    }
+
+    #contact-section {
+        padding: 100px 40px;
     }
 }
 
 @media (max-width: 320px) {
-
-    #main-nav {
-        display: none;
-    }
-
+    
     main {
         font-size: 10px;
     }
 
     main h1 {
         font-size: 35px;
-        text-align: left;
+        text-align: center;
     }
 
     main h3,
@@ -315,49 +334,7 @@ i {
 
     #side-bar {
         height: 100vh;  
-        width: min(75vw, 400px);      
-    }
-
-    #intro-section {
-        padding: 80px 20px;
-    }
-
-    #projects-section {
-        padding: 80px 20px;
-    }
-
-    #contact-section {
-        padding: 80px 20px;
-    }
-
-    i {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 280px) {
-
-    #main-nav {
-        display: none;
-    }
-
-    main {
-        font-size: 10px;
-    }
-
-    main h1 {
-        font-size: 35px;
-        text-align: left;
-    }
-
-    main h3,
-    h4 {
-        font-size: 15px;
-    }
-
-    #side-bar {
-        height: 100vh;  
-        width: 140px;     
+        width: 220px;     
     }
 
     #intro-section {
