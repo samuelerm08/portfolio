@@ -52,13 +52,14 @@ function DesplegarAside() {
     if (!(s.classList.toggle('active'))) {
         btn.style.transform = "rotateZ(0deg)";
         btn.style.transition = "0.5s ease-in";
-
-        sn.style.display = "flex";
+        
         m.style.filter = "blur(0px)";
     }
     else {
         btn.style.transform = "rotateZ(-90deg)";
         btn.style.transition = "0.5s ease-in";
+
+        sn.style.display = "flex";
 
         m.style.position = "relative";
         m.style.filter = "blur(5px)";
