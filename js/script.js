@@ -41,33 +41,36 @@ function MostrarProyectos() {
     });
 }
 
+const s = document.getElementById("side-bar");
+const btn = document.getElementById("burger-button");
+var m = document.querySelector("main");
+
 function DesplegarAside() {
 
-    let s = document.getElementById("side-bar");
     let sn = document.getElementById("side-nav");
-    let m = document.querySelector("main");
-    let b = document.querySelector("html");
 
-    if (s.style.visibility != "visible") {
-        
-        s.style.visibility = "visible";
-        s.style.transform = "translateX(0px)";
-        s.style.transition = "cubic-bezier(0.68, -0.55, 0.27, 1.55)";
+    if (!(s.classList.toggle('active'))) {
+        btn.style.transform = "rotateZ(0deg)";
+        btn.style.transition = "0.5s ease-in";
+
+        sn.style.display = "flex";
+        m.style.filter = "blur(0px)";
+    }
+    else {
+        btn.style.transform = "rotateZ(-90deg)";
+        btn.style.transition = "0.5s ease-in";
 
         m.style.position = "relative";
         m.style.filter = "blur(5px)";
         m.style.zIndex = "-2";
-
-        sn.style.display = "flex";
     }
+}
 
-    else {
-        s.style.visibility = "hidden";
-        s.style.transform = "translateX(100px)";
-
-        m.style.position = "absolute";
-        m.style.filter = "none";
-
-        sn.style.display = "none";
+document.onclick = function (e) {
+    if (e.target.id !== 'burger-button') {
+        s.classList.remove('active');
+        btn.style.transform = "rotateZ(0deg)";
+        btn.style.transition = "0.5s ease-in";
+        m.style.filter = "blur(0px)";
     }
 }

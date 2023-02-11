@@ -8,7 +8,7 @@ html {
     font-size: 18px;
     font-family: 'IBM Plex Mono', monospace;
     color: #ccd6f6;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
 }
 
 header {
@@ -235,15 +235,18 @@ i {
         position: fixed;
         top: 0px;
         bottom: 0px;
-        right: 0px;
+        right: -400px;
         padding: 50px 10px;
         width: min(75vw, 400px);
         height: 100vh;
         background-color: #202021;
         box-shadow: -10px 0px 30px -15px black;
-        z-index: 1;
-        visibility: hidden;
-        transform: translateX(100vw);
+        z-index: 1;        
+        transition: 0.5s cubic-bezier(0.76, 0.01, 0, 1.01);
+    }
+
+    #side-bar.active {
+        right: 0px;
     }
 
     #intro-section {
