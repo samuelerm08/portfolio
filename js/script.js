@@ -25,6 +25,9 @@ const porfolio = [
         github: "https://github.com/samuelerm08/sln-SistemaWeb-Empleados.git"
     }
 ]
+const s = document.getElementById("side-bar");
+const btn = document.getElementById("burger-button");
+var m = document.querySelector("main");
 
 function MostrarProyectos() {
 
@@ -41,10 +44,6 @@ function MostrarProyectos() {
     });
 }
 
-const s = document.getElementById("side-bar");
-const btn = document.getElementById("burger-button");
-var m = document.querySelector("main");
-
 function DesplegarAside() {
 
     let sn = document.getElementById("side-nav");
@@ -52,9 +51,10 @@ function DesplegarAside() {
     if (!(s.classList.toggle('active'))) {
         btn.style.transform = "rotateZ(0deg)";
         btn.style.transition = "0.5s ease-in";
-        
-        m.style.filter = "blur(0px)";
-    }
+
+        m.style.filter = "blur(0px)";     
+    }  
+
     else {
         btn.style.transform = "rotateZ(-90deg)";
         btn.style.transition = "0.5s ease-in";
@@ -64,14 +64,5 @@ function DesplegarAside() {
         m.style.position = "relative";
         m.style.filter = "blur(5px)";
         m.style.zIndex = "-2";
-    }
-}
-
-document.onclick = function (e) {
-    if (e.target.id !== 'burger-button') {
-        s.classList.remove('active');
-        btn.style.transform = "rotateZ(0deg)";
-        btn.style.transition = "0.5s ease-in";
-        m.style.filter = "blur(0px)";
     }
 }
