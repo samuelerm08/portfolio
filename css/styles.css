@@ -8,7 +8,7 @@ html {
     font-size: 18px;
     font-family: 'IBM Plex Mono', monospace;
     color: #ccd6f6;
-    scroll-behavior: smooth;    
+    scroll-behavior: smooth;
 }
 
 header {
@@ -20,7 +20,7 @@ header {
     font-size: 15px;
     position: fixed;
     background-color: #2020215d;
-    backdrop-filter: blur(10px);    
+    backdrop-filter: blur(10px);
 }
 
 header #burger-button {
@@ -143,6 +143,39 @@ main {
     justify-content: center;
 }
 
+#about-intro {
+    margin-top: 100px;
+    text-align: left;
+}
+
+#about-intro ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));    
+    padding: 0px;
+    margin: 20px 0px 0px;
+    overflow: hidden;
+    list-style: none;
+    justify-content: space-around;
+    border: 1px solid #E1CE1D;
+    border-radius: 5px;
+    align-items: center;
+}
+
+hr{
+    color: #E1CE1D;
+}
+
+#about-intro ul li {
+    margin: 0px 5px;
+    padding: 20px;
+}
+
+#about-intro ul li::before {
+    content: "-";
+    color: #E1CE1D;
+    text-align: right;
+}
+
 #intro-section {
     padding: 100px;
 }
@@ -150,7 +183,7 @@ main {
 main h1 {
     color: white;
     font-size: 50px;
-    text-align: center;
+    text-align: left;
     text-shadow: -3px 2px 4px black;
 }
 
@@ -240,7 +273,7 @@ i {
         height: 100vh;
         background-color: #202021;
         box-shadow: -10px 0px 30px -15px black;
-        z-index: 1;        
+        z-index: 1;
         transition: 0.5s cubic-bezier(0.76, 0.01, 0, 1.01);
     }
 
@@ -264,7 +297,7 @@ i {
 @media (max-width: 425px) {
 
     main {
-        font-size: 12px;
+        font-size: 12px;        
     }
 
     #side-bar {
@@ -274,7 +307,7 @@ i {
 
     main h1 {
         font-size: 35px;
-        text-align: center;
+        text-align: left;
     }
 
     main h3,
@@ -284,6 +317,10 @@ i {
 
     #intro-section {
         padding: 100px 50px;
+    }
+    
+    ul{
+
     }
 
     #projects-section {
@@ -299,8 +336,8 @@ i {
     }
 }
 
-@media (max-width: 375px) {  
-    
+@media (max-width: 375px) {
+
     #side-bar {
         height: 100vh;
         width: 275px;
@@ -321,7 +358,7 @@ i {
 
 @media (max-width: 360px) {
 
-    main{
+    main {
         font-size: 10px;
     }
 
@@ -354,7 +391,7 @@ i {
 }
 
 @media (max-width: 320px) {
-    
+
     main {
         font-size: 10px;
     }
@@ -370,8 +407,8 @@ i {
     }
 
     #side-bar {
-        height: 100vh;  
-        width: 220px;     
+        height: 100vh;
+        width: 220px;
     }
 
     #intro-section {
