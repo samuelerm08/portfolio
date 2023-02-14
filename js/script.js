@@ -1,28 +1,26 @@
 const porfolio = [
 
-    {
-        id: 1,
-        title: "Sistema de Carga de Pacientes",
-        description: "Proyecto para bootcamp",
-        github: "https://github.com/samuelerm08/sln-Integrador-Continuacion.git",
-        demo: ""
+    {    
+        title: "Sistema Web de Empleados",
+        description: "Sistema de administración de empleados (CRUD).",
+        tech: "ASP.MVC C# HTML CSS",
+        github: "https://github.com/samuelerm08/sln-SistemaWeb-Empleados.git",
+        demo: "https://sistemawebempleados.azurewebsites.net/"    
+        
     },
-    {
-        id: 2,
+    {        
         title: "API Provincias",
         description: "Proyecto final",
         github: "https://github.com/samuelerm08/sln_WEBAPI_Final.git",
         demo: ""
     },
-    {
-        id: 3,
-        title: "Sistema de Web Empleados (CRUD)",
+    {        
+        title: "Sistema de Carga de Pacientes",
         description: "Proyecto para bootcamp",
-        github: "https://github.com/samuelerm08/sln-SistemaWeb-Empleados.git",
-        demo: "https://sistemawebempleados.azurewebsites.net/"
+        github: "https://github.com/samuelerm08/sln-Integrador-Continuacion.git",
+        demo: ""
     },
-    {
-        id: 4,
+    {        
         title: "Catalogo Web",
         description: "Proyecto académico de Catalogo de Artículos en razor pages",
         github: "https://github.com/samuelerm08/sln-SistemaWeb-Empleados.git",
@@ -35,23 +33,29 @@ const m = document.querySelector("main");
 
 function MostrarProyectos() {
 
-    let tb = document.getElementById('t-b');
+    let uList = document.getElementById('ul-projects');
 
     porfolio.map((item) => {
 
-        let rows = `<tr>                    
-                    <td>${item.title}</td>                       
-                    <td>${item.description}</td>
-                    <td>
+        let newItem = 
+        ` 
+            <li id="list-item">
+                <div class="div-project">
+                        <h4>${item.title}</h4>                    
+                        <p>${item.description}</p>
+                        <p id="p-tech">${item.tech}</p> 
+                    <div>
                         <a href="${item.github}">
                             <i class="fa-brands fa-github"></i>
                         </a>
                         <a href="${item.demo}">
-                            <i class="fa-solid fa-folder-open"></i>
-                        </a>
-                    </td>
-                   <tr>`
-        tb.innerHTML += rows;
+                            <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>   
+                    </div>                                                                            
+                </div> 
+            </li>                                                                                                                                                                    
+        `
+        uList.innerHTML += newItem;
     });
 }
 
@@ -76,7 +80,7 @@ function DesplegarAside() {
         m.style.position = "relative";
         m.style.filter = "blur(5px)";
         m.style.zIndex = "-2";
-        m.style.overflow = "hidden";                   
+        m.style.overflow = "hidden";
     }
 }
 
