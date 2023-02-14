@@ -4,30 +4,34 @@ const porfolio = [
         id: 1,
         title: "Sistema de Carga de Pacientes",
         description: "Proyecto para bootcamp",
-        github: "https://github.com/samuelerm08/sln-Integrador-Continuacion.git"
+        github: "https://github.com/samuelerm08/sln-Integrador-Continuacion.git",
+        demo: ""
     },
     {
         id: 2,
         title: "API Provincias",
         description: "Proyecto final",
-        github: "https://github.com/samuelerm08/sln_WEBAPI_Final.git"
+        github: "https://github.com/samuelerm08/sln_WEBAPI_Final.git",
+        demo: ""
     },
     {
         id: 3,
         title: "Sistema de Web Empleados (CRUD)",
         description: "Proyecto para bootcamp",
-        github: "https://github.com/samuelerm08/sln-SistemaWeb-Empleados.git"
+        github: "https://github.com/samuelerm08/sln-SistemaWeb-Empleados.git",
+        demo: "https://sistemawebempleados.azurewebsites.net/"
     },
     {
         id: 4,
         title: "Catalogo Web",
         description: "Proyecto académico de Catalogo de Artículos en razor pages",
-        github: "https://github.com/samuelerm08/sln-SistemaWeb-Empleados.git"
+        github: "https://github.com/samuelerm08/sln-SistemaWeb-Empleados.git",
+        demo: ""
     }
 ]
 const s = document.getElementById("side-bar");
 const btn = document.getElementById("burger-button");
-var m = document.querySelector("main");
+const m = document.querySelector("main");
 
 function MostrarProyectos() {
 
@@ -38,7 +42,14 @@ function MostrarProyectos() {
         let rows = `<tr>                    
                     <td>${item.title}</td>                       
                     <td>${item.description}</td>
-                    <td><a href="${item.github}">Ver Repositorio</a></td>
+                    <td>
+                        <a href="${item.github}">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="${item.demo}">
+                            <i class="fa-solid fa-folder-open"></i>
+                        </a>
+                    </td>
                    <tr>`
         tb.innerHTML += rows;
     });
@@ -50,19 +61,23 @@ function DesplegarAside() {
 
     if (!(s.classList.toggle('active'))) {
         btn.style.transform = "rotateZ(0deg)";
-        btn.style.transition = "0.5s ease-in";
+        btn.style.transition = "0.3s ease-in";
 
-        m.style.filter = "blur(0px)";     
-    }  
+        m.style.filter = "blur(0px)";
+        m.style.overflow = "scroll";
+    }
 
     else {
         btn.style.transform = "rotateZ(-90deg)";
-        btn.style.transition = "0.5s ease-in";
+        btn.style.transition = "0.3s ease-in";
 
         sn.style.display = "flex";
 
         m.style.position = "relative";
         m.style.filter = "blur(5px)";
         m.style.zIndex = "-2";
+        m.style.overflow = "hidden";                   
     }
 }
+
+
