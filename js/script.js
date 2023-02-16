@@ -2,8 +2,8 @@ const porfolio = [
 
     {    
         title: "Sistema Web de Empleados",
-        description: "Sistema de administración de empleados (CRUD).",
-        tech: "ASP.MVC C# HTML CSS",
+        description: "Sistema de gestión de empleados (CRUD)",
+        tech: "ASP.MVC | C# | HTML | CSS | Azure App Service | Azure SQL",
         github: "https://github.com/samuelerm08/sln-SistemaWeb-Empleados.git",
         demo: "https://sistemawebempleados.azurewebsites.net/"    
         
