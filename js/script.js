@@ -16,10 +16,12 @@ function MostrarProyectos() {
         <p>${item.description}</p>
                         <p id="p-tech">${item.tech}</p> 
                     <div>
-                        <a href="${item.github}">
+                        <a href="${item.github}" target="blank">
+                        GitHub
                             <i class="fa-brands fa-github"></i>
                         </a>
-                        <a href="${item.demo}">
+                        <a href="${item.demo}" target="blank">
+                            Demo
                             <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
                         </a>   
                     </div>                                                                            
