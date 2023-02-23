@@ -410,12 +410,16 @@ footer{
 
     main h3,
     h4 {
-        font-size: 10px;
+        font-size: 12px;
+    }   
+
+    #name-title {
+        margin-top: 10%;
     }
 
     #side-bar {
         height: 100vh;
-        width: 275px;
+        width: 255px;
     }
 
     #intro-section {
@@ -445,6 +449,10 @@ footer{
     main h3,
     h4 {
         font-size: 15px;
+    }
+
+    #name-title {
+        margin-top: 10%;
     }
 
     #side-bar {
@@ -487,7 +495,7 @@ footer{
 
     #side-bar {
         height: 100vh;
-        width: 220px;
+        width: 180px;
     }
 
     #intro-section {
