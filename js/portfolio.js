@@ -10,7 +10,7 @@ const portfolio = [
     },
     {
         title: "Sistema Web de Recetas",
-        description: "Sistema de gestión de recetas (Proyecto para Bootcamp). Se trata de un sistema web que admite solamente la gestión de recetas para desayunos. Layout y operaciones cumpliendo con los requerimientos exigidos",
+        description: "Sistema de gestión de recetas (Proyecto para Bootcamp Accenture 2023). Se trata de un sistema web que admite solamente la gestión de recetas para desayunos. Layout y operaciones cumpliendo con los requerimientos exigidos",
         tech: "ASP.MVC | C# | SQL Server | HTML | CSS | Azure App Service | Azure SQL",
         github: "https://github.com/samuelerm08/slnSamuelRivera.git",
         demo: "https://sistemawebmisrecetas.azurewebsites.net/"
@@ -21,5 +21,12 @@ const portfolio = [
         tech: "ASP.NET Web API Core | C# | SQL Server | HTML | CSS | Azure App Service  Azure SQL ",
         github: "https://github.com/samuelerm08/sln-WebApiControlStock.git",
         demo: "https://apicontrolstock.netlify.app/"
-    }   
+    },
+    {
+        title: "Próximos proyectos...",
+        description: "Proyectos en proceso",
+        tech: "",
+        github: "",
+        demo: ""
+    } 
 ]
