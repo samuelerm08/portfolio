@@ -150,6 +150,10 @@ main {
     text-align: left;
 }
 
+#about-intro p{
+    margin: 50px;
+}
+
 #about-intro ul {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));    
