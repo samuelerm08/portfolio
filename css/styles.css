@@ -7,7 +7,7 @@ html {
     background-color: #202021;
     font-size: 18px;
     font-family: 'IBM Plex Mono', monospace;
-    color: #ccd6f6;
+    color: #ccd6f6;    
     scroll-behavior: smooth;
 }
 
@@ -287,7 +287,7 @@ footer{
     align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {    
 
     header {
         justify-content: space-between;
