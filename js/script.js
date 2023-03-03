@@ -29,7 +29,7 @@ function MostrarProyectos() {
             </li>                                                                                                                                                                    
         `
         uList.innerHTML += newItem;
-    });
+    });            
 }
 
 function DesplegarAside() {
