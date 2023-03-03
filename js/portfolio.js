@@ -4,7 +4,7 @@ const portfolio = [
         title: "Sistema Web de Empleados",
         description: "Sistema de gestión de empleados. Gestionar altas, modificar, eliminar, filtrar y ver detalles de cada empleado. (CRUD)",
         tech: "ASP.MVC | C# | SQL Server | HTML | CSS | Azure App Service | Azure SQL",
-        github: "https://github.com/samuelerm08/sln-SistemaWeb-Empleados.git",
+        github: "https://github.com/samuelerm08/SistemaWebEmpleados.git",
         demo: "https://sistemawebempleados.azurewebsites.net/"
 
     },
